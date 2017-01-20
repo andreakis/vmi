@@ -12,7 +12,7 @@ public class calculation {
 
 	public static void main(String[] args) {
 		int var1;
-		int var2;
+		int var3;
 		String choose;
 
 		Scanner input = new Scanner(System.in);
@@ -20,7 +20,7 @@ public class calculation {
 		System.out.println("Add meg az első számot:");
 		var1 = input.nextInt();
 		System.out.println("Add meg a második számot:");
-		var2 = input.nextInt();
+		var3 = input.nextInt();
        
    	   System.out.println("Válsztható műveletek: 1: Összeadás, 2: kivonás, 3: szorzás,  4: osztás, kilépéshez nyomd meg a 0-t.");
     	do {
@@ -29,16 +29,16 @@ public class calculation {
     		int temp = Integer.parseInt(choose);
     		switch (temp){
             case 1:
-                System.out.println(add(var1,var2));
+                System.out.println(add(var1,var3));
                 break;
             case 2:
-                System.out.println(sub(var1,var2));
+                System.out.println(sub(var1,var3));
                 break;      
             case 3:
-                System.out.println(mult(var1,var2));
+                System.out.println(mult(var1,var3));
                 break;
             case 4:
-            	System.out.println(div(var1,var2));
+            	System.out.println(div(var1,var3));
              		
              case 0:
             	System.exit(0);
